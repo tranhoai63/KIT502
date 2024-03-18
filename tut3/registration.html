@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Charity Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+</html>
+<body>
+  <div class="container">
+    <h1 class="display-2">Registration</h1>
+    <form>
+      <div>
+        <lable class="form-lable" for="fname"> First name </lable><br />
+        <input
+          class="form-control"
+          type="text"
+          id="fname"
+          name="fname"
+          required
+        /><br />
+      </div>
+      <div>
+        <lable class="form-lable" for="lname"> Last name </lable><br />
+        <input
+          class="form-control"
+          type="text"
+          id="lname"
+          name="lname"
+          required
+        /><br />
+      </div>
+      <div>
+        <lable class="form-lable" for="Email"> Email address </lable><br />
+        <input
+          class="form-control"
+          type="email"
+          id="Email"
+          name="Email"
+          aria-describedby="emailHepl"
+          required
+        /><br />
+        <div id="emailHepl" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div>
+        <lable class="form-lable" for="password"> Password</lable><br />
+        <input
+          class="form-control"
+          type="password"
+          id="password"
+          name="password"
+          pattern="^(?=.*[0-9])[a-zA-Z0-9]{7,12}$"
+          required
+          title="Password must contain 7 - 12 letters with at least one number"
+        /><br />
+      </div>
+      <div>
+        <lable class="form-lable" for="confirm"> Confirm Password</lable><br />
+        <input
+          class="form-control"
+          type="password"
+          id="confirm"
+          name="Confirm Password"
+        /><br />
+      </div>
+      <div>
+        <p>
+          Are you a research student?
+          <input type="radio" id="Yes" name="Choose" value="Yes" />
+          <lable for="Yes"> Yes</lable>
+          <input type="radio" id="No" name="Choose" value="No" />
+          <lable for="No"> No </lable><br />
+        </p>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" /> I acknowledge that I have read and understand
+        the terms and conditions.
+      </div>
+      <div class="button">
+        <button class="btn btn-danger">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
